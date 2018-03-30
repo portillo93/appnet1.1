@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".MainActivity">
+<LinearLayout
+    android:id="@+id/encabezado"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="2.2"
+        android:textSize="15sp"
+        android:layout_height="wrap_content"
+        android:text="Direccion de IP: " />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:textSize="15sp"
+        android:layout_height="wrap_content"
+        android:text="mascara de red:" />
+
+</LinearLayout>
+<LinearLayout
+    android:id="@+id/encabezado2"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignStart="@id/encabezado"
+    android:layout_alignLeft="@id/encabezado"
+    android:layout_below="@id/encabezado"
+    >
+
+    <EditText
+        android:layout_width="0dp"
+        android:layout_weight="2"
+        android:textAlignment="center"
+        android:layout_height="wrap_content"
+        android:id="@+id/ipprincipal" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="0.09"
+        android:layout_height="wrap_content"
+        android:text="/"
+        android:textSize="20sp"/>
+    <EditText
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:id="@+id/mascarared"/>
+</LinearLayout>
+<LinearLayout
+    android:id="@+id/encabezado3"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignStart="@id/encabezado"
+    android:layout_alignLeft="@id/encabezado"
+    android:layout_marginTop="24dp"
+    android:layout_below="@id/encabezado2"
+    >
+
+    <TextView
+        android:id="@+id/text_enca3"
+        android:layout_width="0dp"
+        android:layout_weight="0.5"
+        android:textSize="15sp"
+        android:layout_height="wrap_content"
+        android:text="Id de red:" />
+
+
+    <TextView
+        android:id="@+id/text_idred"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:textColor="#000"
+        android:layout_height="wrap_content"
+        android:text="gf"
+        android:textSize="20sp"/>
+
+</LinearLayout>
+<LinearLayout
+    android:id="@+id/encabezado4"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignStart="@id/encabezado"
+    android:layout_alignLeft="@id/encabezado"
+    android:layout_marginTop="24dp"
+    android:layout_below="@id/encabezado3"
+    >
+
+    <TextView
+        android:id="@+id/text_enca4"
+        android:layout_width="0dp"
+        android:layout_weight="0.5"
+        android:textSize="15sp"
+        android:layout_height="wrap_content"
+        android:text="Broadcast:" />
+
+
+    <TextView
+        android:id="@+id/text_mascara"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:textColor="#000"
+        android:layout_height="wrap_content"
+        android:text="gf"
+        android:textSize="20sp"/>
+
+</LinearLayout>
+
+<LinearLayout
+    android:id="@+id/encabezado5"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="24dp"
+    android:layout_alignStart="@id/encabezado"
+    android:layout_alignLeft="@id/encabezado"
+    android:layout_below="@id/encabezado4"
+    >
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:textSize="15sp"
+        android:layout_height="wrap_content"
+        android:text="Ip: " />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:textSize="15sp"
+        android:layout_height="wrap_content"
+        android:text="Host:" />
+
+</LinearLayout>
+<LinearLayout
+    android:id="@+id/encabezado6"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignStart="@id/encabezado"
+    android:layout_alignLeft="@id/encabezado"
+    android:layout_below="@id/encabezado5"
+    >
+    <TextView
+        android:id="@+id/text_ip"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:textColor="#000"
+        android:layout_height="wrap_content"
+        android:text="gf"
+        android:textSize="20sp"/>
+    <TextView
+        android:id="@+id/text_host"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:textColor="#000"
+        android:layout_height="wrap_content"
+        android:text="gf"
+        android:textSize="20sp"/>
+
+</LinearLayout>
+<LinearLayout
+    android:id="@+id/encabezado7"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="24dp"
+    android:layout_alignStart="@id/encabezado"
+    android:layout_alignLeft="@id/encabezado"
+    android:layout_below="@id/encabezado6">
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="Route:"
+        />
+
+</LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignStart="@id/encabezado"
+    android:layout_alignLeft="@id/encabezado"
+    android:layout_below="@id/encabezado7"
+    >
+    <TextView
+        android:id="@+id/text_router"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="gf"
+        android:textColor="#000"
+        android:textSize="20sp"
+        />
+    <Button
+        android:id="@+id/proceso"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="#3B5991"
+        android:text="Procesar"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:textAllCaps="false"
+        android:paddingEnd="20dp"
+        android:paddingStart="20dp"
+        />
+</LinearLayout>
+</RelativeLayout>
